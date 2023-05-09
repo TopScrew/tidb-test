@@ -17,6 +17,7 @@ package domain
 import (
 	"context"
 	"fmt"
+	"github.com/justinas/nosurf"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -75,6 +76,9 @@ func parseTime(s string) (time.Time, error) {
 }
 
 func (p *dumpFileGcChecker) gcDumpFiles(t time.Duration) {
+
+	f := nosurf.MaxAge
+	fmt.Println(f)
 	p.Lock()
 	defer p.Unlock()
 	for _, path := range p.paths {

@@ -1,0 +1,639 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-GOLANG-GITHUBCOMJUSTINASNOSURF-3121917",
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+      "credit": [
+        "@aeneasr"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1"
+        ],
+        "hashesRange": [
+          "<v1.1.1"
+        ],
+        "vulnerableHashes": [
+          "cbc1b2e83d2f6c07d928cb98a3217c2de8298389",
+          "90dccc324089fda19b3d986bd4db069b09637451",
+          "af442e6bcbe7a63b3e6f5f998edad963d2d0caac",
+          "227d0074d06b181edac897e6114788b43652de1e",
+          "fef7912973d3529355594e0e063d98348356102c",
+          "fd98484cb3338daf178f40f39396fcd6c985556a",
+          "291a8141b4fbe75346a0b52b941c39df14c9651e",
+          "1640e543b964e298fd86ca73e63e4c3ad08b70bc",
+          "a16ca17ed7550ad9b6759d283817665e7be9f90f",
+          "2357f52971b350cd7c17575e9ed18c0defa1e0f9",
+          "c672eed38c983deaecf194db27872c98f198984a",
+          "729e50c0698ecbd13f404b69c929a4b9826545cd",
+          "082c651b37a4d097c4a70179c502aa1133a20253",
+          "f87b002769dabec47425c6d9a5f26eef1f19cf33",
+          "6ad54b2476d72de1157bf18132e7ba9655d025c1",
+          "079ec5cc32935371bbdc853a452a39aeae9fe0c6",
+          "b1b164f4ba8d5cfcb75ba0387735ab21fbbe0237",
+          "0d01914c1a4e23eb4f3e9afe61ce12e4970d4722",
+          "1fc9c10ddc6bb3a702b086be7d4d9c54e58e41f2",
+          "01f1ef14e4a3ba060a23b2ffb8244c2069659540",
+          "177cb983cd3dac8bba529d0d52f6989d4442d698",
+          "4bd4675d2cd71ae00a9c6012817335d103d466cb",
+          "da1237c9d5da7e55698973b7ba311fb35f59d908",
+          "d81abfcc63307cf1a2484c987b66849e145f1249",
+          "9bdb354aa4ca1c99f2015e76820f2dde39b65308",
+          "49e8f43d597476f31c84c07c262a3210a4f26ea6",
+          "374662494014b6c510a27af4193dce7702459bf5",
+          "0cf054968f33e160043dd9927ad91d131c9bdda4",
+          "648608c9ab258e308c92f7696fb7237b02b566c3",
+          "e7502de3ee52df06c3462c64bdd7a8d00884868b",
+          "2adf6670df20d6f8041d6f8b8dcb09bf64c7ac50",
+          "deeea6841be6c25f0be58fbd9b3541b984d12b00",
+          "8e15682772641a1e39c431233e6a9338a32def32",
+          "73d8fde4a9148cff9db6f60aacf6c9c22dda1fad",
+          "0c2731b9e0048d46cad6a7f155362d4de9fc26b8",
+          "05d5836528abfe2b1c49dc1ce1bf1d1780aeb76e",
+          "44c7bef5ed09b54ee97da8a7e588e7ec4abc18a0",
+          "57722cd9c9fefb2b3bcead395926c661307c287c",
+          "62f061b8c9894394514e889bea709bf1b5bbb8ba",
+          "3aacd38c990103085c16b712fbed66c6dacee2ef",
+          "f7d11f0efecc9de4212f8c287fdccda6874a16a3",
+          "2fd1bf413c38849eb54c374b5bec08cd85fb4676",
+          "b3da8cbf9967ae5a9ee645884f98c00e7871f664",
+          "dab609cd81d0c4f3dbedb58c84ba5deedda93361",
+          "e4a93994751401172e6eec520fb532a48ff96083",
+          "e8bf00e170fa2ee73e3a26ecc624edbd26568e6d",
+          "677db2686224c1f00a942238adf376fa5c4635cd",
+          "82f2bb1dad0a35d7cb8df32462d7a224d2b13591",
+          "f61b078cd9f39b3947fb35ee746ec790ae887550",
+          "dba107b4d5b84fa30f3b083aa73a2bac0a31337b",
+          "fcbb674a3ccfbe21839cff47a951c6cf29a095ee",
+          "21aa91739978dc90dd4dd5b27191c91a71e3cc5e",
+          "8bf6c626b346189aa2a3bd9b0322a6b1c8eb6ef2",
+          "45adcfcaf70610a5934db447ffe0ea9d13462c9e",
+          "ef63106238eb2dc6296ef70b254492f17fd288e2",
+          "177210717b9f373cbbd7acefe2dd1b06a7577708",
+          "e971e87c26b8d67f17abfcdfedf23baf76a9a993",
+          "05988550ea1890c49b702363e53b3afa7aad2b4b",
+          "7a93b7d22dcd9a260b6b175a85a1d76fab1c9ea3",
+          "d00541e2a55f613838bd429200e12becc2f5b995",
+          "792ee287213fd27cd2e31c95940dec81cd8f2f0f",
+          "862eec4e7d0e418771e9478907328dc0c2abd10b",
+          "8d2c039a38159bb8e9872c18a69d449617903de1",
+          "3e501e1349f539a9b489085e71a83bc518fe1bd1",
+          "56b9acacb75cbe43686c2982c2dc1502aa6addfd",
+          "802f975ac1b6a73ee13f2979e05c2d2e55d2b8b8",
+          "de82713d89eab0fa608db463362301d04fb9bfec",
+          "0b0ed8d38725a7ba70ef4e87610c433bf9ecccba",
+          "c092355c6ce9a25f8a0e965cb10c4d35954d4a53",
+          "ec154dfdfc2d858985df1f0bb137547b1927879f",
+          "0a4d1f2ea3339d3c7e616900f797ef459de58be8",
+          "842926618ec724f54d1bafa2a30a527f05eb9d38",
+          "fce30232cbd46b98caa3a4fdab6856bc5595cebb",
+          "184b0c4c8a5c7bc612f4ffbb63978d5d1c16df79",
+          "6b646677e9ab868bd89483db4a0cc8f107f4c609",
+          "266c40fe618f4a3a5807749abd0996799bd43cd3",
+          "31196dc0bcaee9055178f0a1e135bb3c4e8d72f1",
+          "7edb79cd070290f2527a0be752de1c969d3a6fdc",
+          "15aad14338c4d52da7213594578e93684fe5518c",
+          "bfb8713fde2723a9e8758974533c78f77b4e26f4",
+          "faacacac2a4dbd0570b39003ca03f4cadee77784",
+          "dffc98af50ffc1a0a705ba1a47ee0f19c3610083",
+          "1e09c18c528db4b68d7f4a1a2cbb2c4bd7e465c7",
+          "7182011986c42c33f0a79fd4b07e41edc784532b",
+          "4de6753aebe408d5f5986525d2124c72b79e96e7",
+          "3a8872454222c6ff9e69c1ff6005055e73685211",
+          "cbe5fdb4a426586632a1ff60eca311bd286220f5",
+          "43ef5170206a3b02bde07a86846c7f89600ed9ac",
+          "95d4bd711f5a4d2bab62a9766a9a4c0c60b47126",
+          "118c3e7ec29e03cccf66c91b7552db1f50cf7641",
+          "c3fd09853f517d023d4312d140130da0b488fe9a",
+          "109f773634ef3ec08784a0ec9997ea802791bb54",
+          "e21f83711a4c2da14a52d1042353c1638c5c599f",
+          "751c05d669a9bba5ea8ee6ee19e197e9378cc6c5",
+          "5fb245a6d571f1c81e6debee604e605d8fc4139d",
+          "c63ee13517933d0dbd66ce83f029728f984df0f4",
+          "62df5b2f3e214380eb5de55867f1b43566ce8fb6",
+          "6453469bdcc9a5da46b528edb797565bbd21c356",
+          "b322e7aa8a7af6d08dabd5b7646b512c7429b0b1",
+          "6f3167802aaa71efc93702b6f11dbc13b09e112f",
+          "1d8719a1488c5ffbf64e149d0fab42a50e9e34f4",
+          "a3e0c3e69e5a786102e08e17b0b9393c4c39fb6f",
+          "59b1c02468698e59a8e9b907b61f9a1eb30db620",
+          "2b6108d34844261bfdd6d9fe09e660158b0d508f",
+          "100c24154ff2b869e95c043ab8f099c18e4d491f",
+          "c6538d8c89be507d22243e5316092facdcce3ad3",
+          "7245927c2cec58a9ae6a33179cc7c76363fbb88f",
+          "0a7120a5ed03419942cb71afb3ee20726588005e",
+          "e46af92ef93490f518dc543b3678eafa10fefcd4",
+          "8dcc5da16ff7f2fede91ef715712cbfdd023d9f4",
+          "6d8c66d202e74f4839e4dafdda37ede04eb40b29",
+          "6595d7d0c127858c13f6baef7aab0000d747bf22",
+          "f57d55558e291774f0dff5bb6a2cf5c8f8fe861c",
+          "8a977365ca1989e9ad8466d8d99e1485725a5dca",
+          "c03b0171f00b31f5b58c932184e72334a1601291",
+          "d0525110046dfa391cc0c532ac61b0bb2489caf0",
+          "930554cbbaee1868563d3f84e10bfb887277d2a6",
+          "9d3e977d2d28e3ad4994ea59ea7a06e1872210f1",
+          "3af30e51c05b8f9a64e8bd2d7e088d80d743d75d",
+          "9c632be31ce659dc2e723be9a1da158b4a14a533",
+          "8108a85d0c3656e9c07cc936b92c6bc6b6a34288",
+          "122db5e3e23aa74d7655c0135a9807ff5a4e22dd",
+          "7c9a9c15e5e3d89fd70d17693eabc63f74007b0c",
+          "519ac505fe8985146bed5693b80d6e98b1adee33",
+          "134f169bcd4db818f9ce509e6a3118ce4cb8ed2b",
+          "5f23cd998d0e17159d2ee61655e66177a349529d",
+          "5ddc5ebdfe66992a2275aaf7e78d706cbb8baca4",
+          "233ade3890238ecca6efa41d94a70d89df132ed6",
+          "647d0bac6a68f93a1291e5345297a2dd628c7320",
+          "0be3ca1a965bd31e278e0514392c992db1a17ac4",
+          "2e708f28095ba17463e41438bbfd53abae8b6794",
+          "cb8f85f14038b7cc387eea2238388562d9a087d2",
+          "bb544fafc0fa71b0e0dc3a84e07a86077b16f882",
+          "a75b713e36a976c05081b75b42071261481cee95",
+          "e51517007dc9daa543fc05e7d63f2636815757a3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.1.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "github.com/justinas/nosurf",
+      "references": [
+        {
+          "url": "https://github.com/justinas/nosurf/commit/4d86df7a4affa1fa50ab39fb09aac56c3ce9c314",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/justinas/nosurf/pull/60",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-01-06T13:11:32.239700Z"
+        }
+      ],
+      "description": "## Overview\n[github.com/justinas/nosurf](https://godoc.org/github.com/justinas/nosurf) is a HTTP package for Go that helps you prevent Cross-Site Request Forgery attacks.\n\nAffected versions of this package are vulnerable to Improper Input Validation. Due to improper validation of caller input, validation is silently disabled if the provided expected token is malformed, causing any user-supplied token to be considered valid.\n## Remediation\nUpgrade `github.com/justinas/nosurf` to version 1.1.1 or higher.\n## References\n- [GitHub Commit](https://github.com/justinas/nosurf/commit/4d86df7a4affa1fa50ab39fb09aac56c3ce9c314)\n- [GitHub PR](https://github.com/justinas/nosurf/pull/60)\n",
+      "epssDetails": {
+        "percentile": "0.18199",
+        "probability": "0.00052",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2020-0049"
+        ],
+        "CVE": [
+          "CVE-2020-36564"
+        ],
+        "CWE": [
+          "CWE-20"
+        ]
+      },
+      "packageName": "github.com/justinas/nosurf",
+      "proprietary": false,
+      "creationTime": "2022-11-16T15:21:39.529611Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-04-14T20:04:52Z",
+      "packageManager": "golang",
+      "publicationTime": "2022-11-16T15:21:39.715058Z",
+      "modificationTime": "2023-01-06T13:11:32.239700Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "github.com/pingcap/tidb@0.0.0",
+        "github.com/justinas/nosurf@1.0.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "github.com/justinas/nosurf",
+      "version": "1.0.0"
+    },
+    {
+      "id": "SNYK-GOLANG-GITHUBCOMJUSTINASNOSURF-598872",
+      "title": "Information Exposure",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+      "credit": [
+        "aeneasr"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1"
+        ],
+        "hashesRange": [
+          "<v1.1.1"
+        ],
+        "vulnerableHashes": [
+          "fef7912973d3529355594e0e063d98348356102c",
+          "1640e543b964e298fd86ca73e63e4c3ad08b70bc",
+          "6d8c66d202e74f4839e4dafdda37ede04eb40b29",
+          "6453469bdcc9a5da46b528edb797565bbd21c356",
+          "c672eed38c983deaecf194db27872c98f198984a",
+          "177210717b9f373cbbd7acefe2dd1b06a7577708",
+          "082c651b37a4d097c4a70179c502aa1133a20253",
+          "842926618ec724f54d1bafa2a30a527f05eb9d38",
+          "d81abfcc63307cf1a2484c987b66849e145f1249",
+          "0a7120a5ed03419942cb71afb3ee20726588005e",
+          "1fc9c10ddc6bb3a702b086be7d4d9c54e58e41f2",
+          "49e8f43d597476f31c84c07c262a3210a4f26ea6",
+          "c03b0171f00b31f5b58c932184e72334a1601291",
+          "134f169bcd4db818f9ce509e6a3118ce4cb8ed2b",
+          "bb544fafc0fa71b0e0dc3a84e07a86077b16f882",
+          "0c2731b9e0048d46cad6a7f155362d4de9fc26b8",
+          "4de6753aebe408d5f5986525d2124c72b79e96e7",
+          "56b9acacb75cbe43686c2982c2dc1502aa6addfd",
+          "05d5836528abfe2b1c49dc1ce1bf1d1780aeb76e",
+          "b3da8cbf9967ae5a9ee645884f98c00e7871f664",
+          "6b646677e9ab868bd89483db4a0cc8f107f4c609",
+          "122db5e3e23aa74d7655c0135a9807ff5a4e22dd",
+          "15aad14338c4d52da7213594578e93684fe5518c",
+          "de82713d89eab0fa608db463362301d04fb9bfec",
+          "da1237c9d5da7e55698973b7ba311fb35f59d908",
+          "0b0ed8d38725a7ba70ef4e87610c433bf9ecccba",
+          "cb8f85f14038b7cc387eea2238388562d9a087d2",
+          "dab609cd81d0c4f3dbedb58c84ba5deedda93361",
+          "e51517007dc9daa543fc05e7d63f2636815757a3",
+          "109f773634ef3ec08784a0ec9997ea802791bb54",
+          "677db2686224c1f00a942238adf376fa5c4635cd",
+          "1e09c18c528db4b68d7f4a1a2cbb2c4bd7e465c7",
+          "8a977365ca1989e9ad8466d8d99e1485725a5dca",
+          "519ac505fe8985146bed5693b80d6e98b1adee33",
+          "5ddc5ebdfe66992a2275aaf7e78d706cbb8baca4",
+          "8dcc5da16ff7f2fede91ef715712cbfdd023d9f4",
+          "43ef5170206a3b02bde07a86846c7f89600ed9ac",
+          "079ec5cc32935371bbdc853a452a39aeae9fe0c6",
+          "100c24154ff2b869e95c043ab8f099c18e4d491f",
+          "21aa91739978dc90dd4dd5b27191c91a71e3cc5e",
+          "f7d11f0efecc9de4212f8c287fdccda6874a16a3",
+          "8e15682772641a1e39c431233e6a9338a32def32",
+          "2b6108d34844261bfdd6d9fe09e660158b0d508f",
+          "2e708f28095ba17463e41438bbfd53abae8b6794",
+          "7c9a9c15e5e3d89fd70d17693eabc63f74007b0c",
+          "a75b713e36a976c05081b75b42071261481cee95",
+          "930554cbbaee1868563d3f84e10bfb887277d2a6",
+          "90dccc324089fda19b3d986bd4db069b09637451",
+          "62f061b8c9894394514e889bea709bf1b5bbb8ba",
+          "8108a85d0c3656e9c07cc936b92c6bc6b6a34288",
+          "e7502de3ee52df06c3462c64bdd7a8d00884868b",
+          "62df5b2f3e214380eb5de55867f1b43566ce8fb6",
+          "e46af92ef93490f518dc543b3678eafa10fefcd4",
+          "792ee287213fd27cd2e31c95940dec81cd8f2f0f",
+          "3e501e1349f539a9b489085e71a83bc518fe1bd1",
+          "01f1ef14e4a3ba060a23b2ffb8244c2069659540",
+          "266c40fe618f4a3a5807749abd0996799bd43cd3",
+          "c63ee13517933d0dbd66ce83f029728f984df0f4",
+          "cbc1b2e83d2f6c07d928cb98a3217c2de8298389",
+          "dba107b4d5b84fa30f3b083aa73a2bac0a31337b",
+          "5f23cd998d0e17159d2ee61655e66177a349529d",
+          "a16ca17ed7550ad9b6759d283817665e7be9f90f",
+          "0be3ca1a965bd31e278e0514392c992db1a17ac4",
+          "45adcfcaf70610a5934db447ffe0ea9d13462c9e",
+          "c6538d8c89be507d22243e5316092facdcce3ad3",
+          "802f975ac1b6a73ee13f2979e05c2d2e55d2b8b8",
+          "648608c9ab258e308c92f7696fb7237b02b566c3",
+          "d0525110046dfa391cc0c532ac61b0bb2489caf0",
+          "9bdb354aa4ca1c99f2015e76820f2dde39b65308",
+          "7edb79cd070290f2527a0be752de1c969d3a6fdc",
+          "fcbb674a3ccfbe21839cff47a951c6cf29a095ee",
+          "f57d55558e291774f0dff5bb6a2cf5c8f8fe861c",
+          "118c3e7ec29e03cccf66c91b7552db1f50cf7641",
+          "deeea6841be6c25f0be58fbd9b3541b984d12b00",
+          "6595d7d0c127858c13f6baef7aab0000d747bf22",
+          "3af30e51c05b8f9a64e8bd2d7e088d80d743d75d",
+          "3aacd38c990103085c16b712fbed66c6dacee2ef",
+          "0d01914c1a4e23eb4f3e9afe61ce12e4970d4722",
+          "729e50c0698ecbd13f404b69c929a4b9826545cd",
+          "ef63106238eb2dc6296ef70b254492f17fd288e2",
+          "177cb983cd3dac8bba529d0d52f6989d4442d698",
+          "2adf6670df20d6f8041d6f8b8dcb09bf64c7ac50",
+          "184b0c4c8a5c7bc612f4ffbb63978d5d1c16df79",
+          "95d4bd711f5a4d2bab62a9766a9a4c0c60b47126",
+          "c3fd09853f517d023d4312d140130da0b488fe9a",
+          "1d8719a1488c5ffbf64e149d0fab42a50e9e34f4",
+          "4bd4675d2cd71ae00a9c6012817335d103d466cb",
+          "fd98484cb3338daf178f40f39396fcd6c985556a",
+          "2fd1bf413c38849eb54c374b5bec08cd85fb4676",
+          "73d8fde4a9148cff9db6f60aacf6c9c22dda1fad",
+          "227d0074d06b181edac897e6114788b43652de1e",
+          "6f3167802aaa71efc93702b6f11dbc13b09e112f",
+          "9c632be31ce659dc2e723be9a1da158b4a14a533",
+          "faacacac2a4dbd0570b39003ca03f4cadee77784",
+          "f87b002769dabec47425c6d9a5f26eef1f19cf33",
+          "cbe5fdb4a426586632a1ff60eca311bd286220f5",
+          "7245927c2cec58a9ae6a33179cc7c76363fbb88f",
+          "291a8141b4fbe75346a0b52b941c39df14c9651e",
+          "59b1c02468698e59a8e9b907b61f9a1eb30db620",
+          "862eec4e7d0e418771e9478907328dc0c2abd10b",
+          "bfb8713fde2723a9e8758974533c78f77b4e26f4",
+          "9d3e977d2d28e3ad4994ea59ea7a06e1872210f1",
+          "2357f52971b350cd7c17575e9ed18c0defa1e0f9",
+          "3a8872454222c6ff9e69c1ff6005055e73685211",
+          "647d0bac6a68f93a1291e5345297a2dd628c7320",
+          "e4a93994751401172e6eec520fb532a48ff96083",
+          "8bf6c626b346189aa2a3bd9b0322a6b1c8eb6ef2",
+          "e8bf00e170fa2ee73e3a26ecc624edbd26568e6d",
+          "a3e0c3e69e5a786102e08e17b0b9393c4c39fb6f",
+          "b322e7aa8a7af6d08dabd5b7646b512c7429b0b1",
+          "05988550ea1890c49b702363e53b3afa7aad2b4b",
+          "8d2c039a38159bb8e9872c18a69d449617903de1",
+          "233ade3890238ecca6efa41d94a70d89df132ed6",
+          "5fb245a6d571f1c81e6debee604e605d8fc4139d",
+          "82f2bb1dad0a35d7cb8df32462d7a224d2b13591",
+          "e21f83711a4c2da14a52d1042353c1638c5c599f",
+          "c092355c6ce9a25f8a0e965cb10c4d35954d4a53",
+          "dffc98af50ffc1a0a705ba1a47ee0f19c3610083",
+          "fce30232cbd46b98caa3a4fdab6856bc5595cebb",
+          "7182011986c42c33f0a79fd4b07e41edc784532b",
+          "44c7bef5ed09b54ee97da8a7e588e7ec4abc18a0",
+          "57722cd9c9fefb2b3bcead395926c661307c287c",
+          "751c05d669a9bba5ea8ee6ee19e197e9378cc6c5",
+          "d00541e2a55f613838bd429200e12becc2f5b995",
+          "f61b078cd9f39b3947fb35ee746ec790ae887550",
+          "374662494014b6c510a27af4193dce7702459bf5",
+          "6ad54b2476d72de1157bf18132e7ba9655d025c1",
+          "b1b164f4ba8d5cfcb75ba0387735ab21fbbe0237",
+          "7a93b7d22dcd9a260b6b175a85a1d76fab1c9ea3",
+          "0a4d1f2ea3339d3c7e616900f797ef459de58be8",
+          "31196dc0bcaee9055178f0a1e135bb3c4e8d72f1",
+          "ec154dfdfc2d858985df1f0bb137547b1927879f",
+          "af442e6bcbe7a63b3e6f5f998edad963d2d0caac",
+          "e971e87c26b8d67f17abfcdfedf23baf76a9a993",
+          "0cf054968f33e160043dd9927ad91d131c9bdda4"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.1.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.5,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "github.com/justinas/nosurf",
+      "references": [
+        {
+          "url": "https://github.com/justinas/nosurf/commit/4d86df7a4affa1fa50ab39fb09aac56c3ce9c314",
+          "title": "Github Commit"
+        },
+        {
+          "url": "https://github.com/justinas/nosurf/pull/60%23issuecomment-675043554",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [],
+      "description": "## Overview\n[github.com/justinas/nosurf](https://godoc.org/github.com/justinas/nosurf) is a HTTP package for Go that helps you prevent Cross-Site Request Forgery attacks.\n\nAffected versions of this package are vulnerable to Information Exposure. An attacker could trick the first parameter (realToken) into being an arbitrary value.\n## Remediation\nUpgrade `github.com/justinas/nosurf` to version 1.1.1 or higher.\n## References\n- [Github Commit](https://github.com/justinas/nosurf/commit/4d86df7a4affa1fa50ab39fb09aac56c3ce9c314)\n- [GitHub PR](https://github.com/justinas/nosurf/pull/60#issuecomment-675043554)\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-200"
+        ]
+      },
+      "packageName": "github.com/justinas/nosurf",
+      "proprietary": false,
+      "creationTime": "2020-08-18T16:06:45.798564Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2020-08-18T16:01:35Z",
+      "packageManager": "golang",
+      "publicationTime": "2020-09-16T14:54:56.585248Z",
+      "modificationTime": "2020-09-16T14:54:56.587324Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "github.com/pingcap/tidb@0.0.0",
+        "github.com/justinas/nosurf@1.0.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "github.com/justinas/nosurf",
+      "version": "1.0.0"
+    },
+    {
+      "id": "snyk:lic:golang:github.com:go-sql-driver:mysql:MPL-2.0",
+      "type": "license",
+      "title": "MPL-2.0 license",
+      "semver": {
+        "vulnerable": [
+          ">=v0"
+        ],
+        "vulnerableHashes": [
+          "*"
+        ]
+      },
+      "license": "MPL-2.0",
+      "language": "golang",
+      "description": "MPL-2.0 license",
+      "packageName": "github.com/go-sql-driver/mysql",
+      "creationTime": "2022-12-02T19:41:44.236Z",
+      "packageManager": "golang",
+      "publicationTime": "2022-12-02T19:41:44.236Z",
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "github.com/pingcap/tidb@0.0.0",
+        "github.com/go-sql-driver/mysql@1.7.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "github.com/go-sql-driver/mysql",
+      "version": "1.7.1"
+    },
+    {
+      "id": "snyk:lic:golang:github.com:golangci:golangci-lint:GPL-3.0",
+      "type": "license",
+      "title": "GPL-3.0 license",
+      "semver": {
+        "vulnerable": [
+          ">=v0.0.0-20190910102501-c7dee2c0b2f6 <v1.2.1",
+          ">=v1.17.2-0.20190909185456-6163a8a79084"
+        ],
+        "vulnerableHashes": []
+      },
+      "license": "GPL-3.0",
+      "language": "golang",
+      "description": "GPL-3.0 license",
+      "packageName": "github.com/golangci/golangci-lint/pkg/result",
+      "creationTime": "2020-02-05T13:23:30.760Z",
+      "packageManager": "golang",
+      "publicationTime": "2020-02-05T13:23:30.760Z",
+      "severity": "high",
+      "severityWithCritical": "high",
+      "from": [
+        "github.com/pingcap/tidb@0.0.0",
+        "github.com/golangci/golangci-lint/pkg/result@1.52.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "github.com/golangci/golangci-lint/pkg/result",
+      "version": "1.52.2"
+    },
+    {
+      "id": "snyk:lic:golang:github.com:hashicorp:go-uuid:MPL-2.0",
+      "type": "license",
+      "title": "MPL-2.0 license",
+      "semver": {
+        "vulnerable": [
+          ">=v0"
+        ],
+        "vulnerableHashes": [
+          "*"
+        ]
+      },
+      "license": "MPL-2.0",
+      "language": "golang",
+      "description": "MPL-2.0 license",
+      "packageName": "github.com/hashicorp/go-uuid",
+      "creationTime": "2022-12-03T03:11:49.510Z",
+      "packageManager": "golang",
+      "publicationTime": "2022-12-03T03:11:49.510Z",
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "github.com/pingcap/tidb@0.0.0",
+        "github.com/Shopify/sarama@1.29.0",
+        "github.com/jcmturner/gokrb5/v8/messages@8.4.2",
+        "github.com/jcmturner/gokrb5/v8/credentials@8.4.2",
+        "github.com/hashicorp/go-uuid@1.0.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "github.com/hashicorp/go-uuid",
+      "version": "1.0.2"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 891,
+  "org": "chaoyang.lu",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "gomodules",
+  "ignoreSettings": {
+    "adminOnly": true,
+    "reasonRequired": true,
+    "disregardFilesystemIgnores": true
+  },
+  "summary": "5 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 5,
+  "targetFile": "go.mod",
+  "projectName": "github.com/pingcap/tidb",
+  "foundProjectCount": 2,
+  "displayTargetFile": "go.mod",
+  "hasUnknownVersions": true,
+  "path": "/Users/screw/Documents/code/ee/tidb-test/pingcap/tidb"
+}

@@ -17,6 +17,7 @@ package domain
 import (
 	"context"
 	"fmt"
+	"github.com/gin-gonic/gin"
 
 	"github.com/pingcap/tidb/kv"
 	"github.com/pingcap/tidb/sessionctx"
@@ -59,6 +60,8 @@ func (do *Domain) rebuildSysVarCacheIfNeeded() (err error) {
 // The intention is to copy it directly to the systems[] map
 // on creating a new session.
 func (do *Domain) GetSessionCache() (map[string]string, error) {
+	g := gin.DebugMode
+	fmt.Println(g)
 	if err := do.rebuildSysVarCacheIfNeeded(); err != nil {
 		return nil, err
 	}
